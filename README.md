@@ -43,7 +43,7 @@ look alike. Moving the accent to the moonlight instead puts 59.5 ΔE between the
 
 | File | |
 |---|---|
-| `colors.toml` | the palette — generates 17 app configs on its own |
+| `colors.toml` | the palette Omarchy uses to render its installed app templates |
 | `hyprland.lua` | sage→coral border gradient + a cool shadow on the focused window |
 | `shell.{menu,launcher,tooltip,lock}.toml` | per-section shell overrides |
 | `icons.theme` | `Yaru-sage-dark` |
@@ -59,8 +59,10 @@ theme was designed against a piece of pixel art, but that is someone else's work
 not redistributed. Drop your own in:
 
 ```bash
-cp <your-wallpaper> ~/.config/omarchy/themes/tenshu/backgrounds/1-tenshu.png
+mkdir -p ~/.config/omarchy/backgrounds/tenshu
+cp ~/Pictures/wallpaper.png ~/.config/omarchy/backgrounds/tenshu/1-tenshu.png
 omarchy theme set tenshu
+omarchy theme bg set ~/.config/omarchy/backgrounds/tenshu/1-tenshu.png
 ```
 
 ## Caveats
